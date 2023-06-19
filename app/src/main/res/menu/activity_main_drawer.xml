@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icons8_casa_35"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_clientes"
+            android:icon="@drawable/icons8_clientes_35"
+            android:title="@string/menu_clientes" />
+        <item
+            android:id="@+id/nav_proveedores"
+            android:icon="@drawable/icons8_proveedor_35"
+            android:title="@string/menu_proveedores" />
+        <item
+            android:id="@+id/nav_articulos"
+            android:icon="@drawable/icons8_articulo_35"
+            android:title="@string/menu_articulos" />
+        <item
+            android:id="@+id/nav_facventas"
+            android:icon="@drawable/icons8_factura_35"
+            android:title="@string/menu_facventas" />
+        <item
+            android:id="@+id/nav_faccomp"
+            android:icon="@drawable/icons8_factura_35"
+            android:title="@string/menu_faccompra" />
+
+    </group>
+</menu>

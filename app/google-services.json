@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "227030277792",
+    "project_id": "minierp-fea28",
+    "storage_bucket": "minierp-fea28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227030277792:android:0396baec49c41c28b5f3c5",
+        "android_client_info": {
+          "package_name": "com.example.minierp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227030277792-vgui3c3ok6l57lcp9h9mft43e8bhkn2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.minierp",
+            "certificate_hash": "5fef2e9c719de6f94354e3de39561c62488215d2"
+          }
+        },
+        {
+          "client_id": "227030277792-vsvt5pjdc45u51ajni499rrlcuu0ue3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6vdojhZdo6A29_sjvHkEcHPLUud4z6f4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227030277792-vsvt5pjdc45u51ajni499rrlcuu0ue3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

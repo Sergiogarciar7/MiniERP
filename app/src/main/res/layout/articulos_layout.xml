@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:textAlignment="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_margin="10dp"
+        android:background="#E6E4E4"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/tv_precio"
+            android:layout_width="136dp"
+            android:layout_height="46dp"
+            android:text="@string/precio"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_descripcion"
+            app:layout_constraintEnd_toStartOf="@+id/tv_stock"
+            app:layout_constraintStart_toEndOf="@+id/tv_nombre"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/tv_stock"
+            android:layout_width="102dp"
+            android:layout_height="46dp"
+            android:text="@string/stock"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_descripcion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_precio"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="92dp"
+            android:layout_height="52dp"
+            android:text="@string/nombre"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="379dp"
+            android:layout_height="31dp"
+            android:background="#BCBABA"
+            android:text="@string/descripcion"
+            android:textAlignment="center"
+            android:textColor="#595858"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#F40909"
+            android:drawableStart="@android:drawable/ic_menu_delete"
+            android:textColor="#FFFFFF"
+            app:icon="@android:drawable/ic_menu_delete"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_editar"
+            app:layout_constraintTop_toBottomOf="@+id/tv_descripcion"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_editar"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#3F51B5"
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            android:textColor="#FFFFFF"
+            app:icon="@android:drawable/ic_menu_edit"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_descripcion"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

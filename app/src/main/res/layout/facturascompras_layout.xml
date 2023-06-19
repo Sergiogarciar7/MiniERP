@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:textAlignment="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_margin="10dp"
+        android:background="#E6E4E4"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/tv_idfactcom"
+            android:layout_width="59dp"
+            android:layout_height="25dp"
+            android:text="@string/id"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_nombreartfactcom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.195"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_nombreartfactcom"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <TextView
+            android:id="@+id/tv_nombreartfactcom"
+            android:layout_width="192dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="4dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.543"
+            app:layout_constraintStart_toEndOf="@+id/labelID"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055" />
+
+        <TextView
+            android:id="@+id/tvFechafactcom"
+            android:layout_width="123dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="164dp"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/labelFecha"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nombreartfactcom"
+            app:layout_constraintVertical_bias="0.525" />
+
+        <TextView
+            android:id="@+id/tvCantidadtcom"
+            android:layout_width="150dp"
+            android:layout_height="24dp"
+            android:text="@string/Cantidad"
+            android:textAlignment="center"
+            android:textColor="#595858"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.302" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+
+            android:drawableStart="@android:drawable/ic_menu_delete"
+            android:textColor="#FFFFFF"
+            app:icon="@android:drawable/ic_menu_delete"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_editar"
+            app:layout_constraintHorizontal_bias="0.939"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCantidadtcom"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btn_editar"
+            android:layout_width="68dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="4dp"
+            android:background="@android:color/transparent"
+
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            android:textColor="#FFFFFF"
+            app:icon="@android:drawable/ic_menu_edit"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCantidadtcom"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/labelID"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:text="ID:"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_idfactcom"
+            app:layout_constraintEnd_toEndOf="@+id/labelFecha"
+            app:layout_constraintEnd_toStartOf="@+id/tv_idfactcom"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/labelFecha"
+            app:layout_constraintTop_toTopOf="@+id/tv_idfactcom"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <TextView
+            android:id="@+id/labelFecha"
+            android:layout_width="59dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:text="Fecha:"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFechafactcom"
+            app:layout_constraintEnd_toStartOf="@+id/tvFechafactcom"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvFechafactcom"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvImportetcom"
+            android:layout_width="142dp"
+            android:layout_height="25dp"
+            android:text="@string/Importe"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCantidadtcom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.768"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvCantidadtcom"
+            app:layout_constraintVertical_bias="0.32" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_nombrecprov"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.017"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_nombrecprov"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_nombrecprov"
+            android:layout_width="127dp"
+            android:layout_height="27dp"
+            android:text="TextView"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.343"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.952" />
+
+        <Button
+            android:id="@+id/btnImprimir3"
+            android:layout_width="50dp"
+            android:layout_height="41dp"
+            android:background="@android:color/transparent"
+
+            app:icon="@drawable/icons8_imprimir_35"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

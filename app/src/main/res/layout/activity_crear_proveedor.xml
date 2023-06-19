@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crearProveedor">
+    <EditText
+        android:id="@+id/etNombrePro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Nombre proveedor"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etNifPro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNifPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="NIF proveedor"
+        app:layout_constraintBottom_toTopOf="@+id/etDireccionPro"
+        app:layout_constraintStart_toStartOf="@+id/etNombrePro"
+        app:layout_constraintTop_toBottomOf="@+id/etNombrePro" />
+
+    <EditText
+        android:id="@+id/etDireccionPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="Dirección proveedor"
+        app:layout_constraintEnd_toEndOf="@+id/etNifPro"
+        app:layout_constraintTop_toBottomOf="@+id/etNifPro" />
+
+    <EditText
+        android:id="@+id/etIdPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="ID proveedor"
+        app:layout_constraintEnd_toEndOf="@+id/etNifPro"
+        app:layout_constraintTop_toBottomOf="@+id/etNifPro" />
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="2dp"
+        android:text="Guardar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnCancelar"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="270dp"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

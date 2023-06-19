@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:textAlignment="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_margin="10dp"
+        android:background="#E6E4E4"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/tv_idcli"
+            android:layout_width="59dp"
+            android:layout_height="25dp"
+            android:text="@string/id"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.195"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <TextView
+            android:id="@+id/tv_nombrecli"
+            android:layout_width="246dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="4dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/labelID"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <TextView
+            android:id="@+id/tv_nifcli"
+            android:layout_width="150dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="164dp"
+            android:text="@string/nif"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/labelFecha"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nombrecli"
+            app:layout_constraintVertical_bias="0.561" />
+
+        <TextView
+            android:id="@+id/tv_direccion"
+            android:layout_width="379dp"
+            android:layout_height="31dp"
+            android:background="#BCBABA"
+            android:textAlignment="center"
+            android:textColor="#595858"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.319" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#F40909"
+            android:drawableStart="@android:drawable/ic_menu_delete"
+            android:textColor="#FFFFFF"
+            app:icon="@android:drawable/ic_menu_delete"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_editar"
+            app:layout_constraintHorizontal_bias="0.939"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_direccion"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btn_editar"
+            android:layout_width="68dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#3F51B5"
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            android:textColor="#FFFFFF"
+            app:icon="@android:drawable/ic_menu_edit"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_direccion"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/labelID"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:text="ID:"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_idcli"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <TextView
+            android:id="@+id/labelFecha"
+            android:layout_width="36dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="3dp"
+            android:text="NIF:"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_nifcli"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.659" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

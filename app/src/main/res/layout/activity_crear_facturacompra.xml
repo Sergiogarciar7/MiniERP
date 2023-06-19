@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2D1F4"
+    tools:context=".crearFacturacompra">
+
+    <Spinner
+        android:id="@+id/etNombreartfacc"
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Nombre Articulo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etimporte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etimporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Importe"
+        android:inputType="number|numberDecimal"
+        android:numeric="decimal"
+        app:layout_constraintBottom_toTopOf="@+id/etcantidad"
+        app:layout_constraintStart_toStartOf="@+id/etNombreartfacc"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreartfacc" />
+
+    <EditText
+        android:id="@+id/etcantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etimporte"
+        app:layout_constraintTop_toBottomOf="@+id/etimporte" />
+
+    <EditText
+        android:id="@+id/idfactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="ID Factura"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etimporte"
+        app:layout_constraintTop_toBottomOf="@+id/etimporte" />
+
+    <EditText
+        android:id="@+id/fechafactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint=" fecha factura"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etimporte"
+        app:layout_constraintTop_toBottomOf="@+id/etimporte" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="2dp"
+        android:text="Guardar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnCancelar"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardar" />
+
+    <Spinner
+        android:id="@+id/spinnerprov"
+        android:layout_width="218dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <TextView
+        android:id="@+id/tveditartpro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:enabled="false"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/tvediprov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:enabled="false"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tveditartpro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+</androidx.constraintlayout.widget.ConstraintLayout>

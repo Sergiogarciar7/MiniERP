@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.minierp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_clientes"
+        android:name="com.example.minierp.ui.gallery.ClientesFragment"
+        android:label="@string/menu_clientes"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_proveedores"
+        android:name="com.example.minierp.ui.slideshow.proveedoresFragment"
+        android:label="@string/menu_proveedores"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_articulos"
+        android:name="com.example.minierp.ui.ArticulosmFragment"
+        android:label="@string/menu_articulos"
+        tools:layout="@layout/activity_articulosm_fragment" />
+    <fragment
+        android:id="@+id/nav_facventas"
+        android:name="com.example.minierp.ui.facturasventasFragment"
+        android:label="@string/menu_facventas"
+        tools:layout="@layout/activity_facturasventas_fragment" />
+    <fragment
+        android:id="@+id/nav_faccomp"
+        android:name="com.example.minierp.ui.FacturascomprasFragment"
+        android:label="@string/menu_faccompra"
+        tools:layout="@layout/activity_facturascompras_fragment" />
+</navigation>
